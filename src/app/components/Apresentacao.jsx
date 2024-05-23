@@ -74,7 +74,7 @@ export default function Apresentacao() {
       }, 60000);  //faz com que o estado status seja atualizado a cada minuto para garantir que o status ('Aberto' ou 'Fechado') esteja correto, mesmo que o usuário mantenha a página aberta por um longo período.
 
       return () => clearInterval(intervalId);
-    }, []);
+    }, [status]);
 
     const statusStyle = {
       color: status === 'Aberto' ? 'green' : 'red',
