@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  background-color: rgb(228, 227, 227);
+  font-weight: 600;  
+  
+}
+
+#menu-navbar {
+
+  list-style: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  padding: 3.5px;
+  
+}
+
+
+
+
