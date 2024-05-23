@@ -105,13 +105,13 @@ export default function Apresentacao() {
           </Image>
         </div>
 
-        <div className='w-[70%] flex justify-start pl-4 flex-col text-[13.5px] md:text-[16px] pt-2 md:pt-6'>
+        <div className='w-[70%] flex justify-start pl-4 flex-col text-[13.5px] md:text-[16px] sm:text-[16px] pt-2 md:pt-6'>
           <strong> JR Ferragem </strong>
           <p> Mini Mercado & Ferragem </p>
         </div>
       </section>
 
-      <section className='pt-6 text-[13.5px] md:text-[16px] '>
+      <section className='pt-6 text-[13.5px] md:text-[16px] sm:text-[16px] '>
         <div> <OperatingStatus /></div>
         <div> Pedido mínino para entrega: R$ 15,00 </div>
         <div> </div>

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"; //Hooks
 import Header from "./components/Header";
 import Apresentacao from "./components/Apresentacao";
 import Footer from "./components/Footer";
+import WhatsappBtn from "./components/WhatsappBtn";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Header />
       <Apresentacao /> 
       <Footer />
+      <WhatsappBtn />
              
     </div>
   );
