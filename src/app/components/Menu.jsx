@@ -6,14 +6,14 @@ export default function Menu({ categories, onSelectCategory }) {
 
             <ul className="flex gap-4 flex-wrap justify-center">
                 {categories.map((category) => (
-                    <li id="menu-navbar"
+                    <li id="menu-navbar" 
                         key={category}
                         onClick={() => onSelectCategory(category)}
-                        className="cursor-pointer">
+                        className="cursor-pointer w-[10px]">
                         {category}
                     </li>
                 ))}
-            </ul>
+            </ul>            
         </section>
     )
 }

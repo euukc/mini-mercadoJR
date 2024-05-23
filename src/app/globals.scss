@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   color: black;
-  background-color: rgb(228, 227, 227);
+  background-color: rgb(228, 227, 227);   
   font-weight: 600;  
   
 }
@@ -17,11 +17,23 @@
   list-style: none;
   border: 2px solid transparent;
   border-radius: 10px;
-  color: white;
-  background-color: black;
-  padding: 3.5px;
-  
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  width: 100px;
+  height: 40px;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+    
 }
+
+
+@media(max-width: 574px) {
+  #menu-navbar {
+    width: 70px;
+    height: 30px;
+  }
+  }
 
 
 

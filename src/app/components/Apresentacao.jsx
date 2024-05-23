@@ -11,7 +11,7 @@ const productsData = [
     "name": "Martelo",
     "image": "/martelo.jpg",
     "price": "R$ 20,00",
-    "description": "Martelo de aço",
+    "description": "Martelo Unha 29cm Aço Polido",
     "category": "Martelos"
   },
   {
@@ -27,7 +27,7 @@ const productsData = [
     "name": "Serrote",
     "image": "/serrote.jpg",
     "price": "R$ 30,00",
-    "description": "Serrote xxxx",
+    "description": "Serrote Profissional 29 Polegadas",
     "category": "Serrotes"
   },
   {
@@ -35,7 +35,7 @@ const productsData = [
     "name": "Alicate Universal",
     "image": "/alicate-universal.jpg",
     "price": "R$ 20,00",
-    "description": "Martelo de Madeira",
+    "description": "Corpo forjado em aço especial e temperado, aço carbono especial empregado na fabricação do produto",
     "category": "Alicates"
   },
   {
@@ -51,7 +51,7 @@ const productsData = [
     "name": "Chave Philips",
     "image": "/chave-philips.png",
     "price": "R$ 20,00",
-    "description": "Chave Philips xxxxx",
+    "description": "Chave Philips de 1/4 x 6 Polegadas",
     "category": "Chaves"
   }
 ];
@@ -78,6 +78,7 @@ export default function Apresentacao() {
 
     const statusStyle = {
       color: status === 'Aberto' ? 'green' : 'red',
+      
     };
 
     return (
@@ -97,7 +98,7 @@ export default function Apresentacao() {
 
 
   return (
-    <main className="md:w-[50%] w-[85%] rounded bg-white absolute top-[50px] p-[16px] flex flex-col md:mt-32 mb-32">
+    <main className="md:w-[50%] w-[85%] rounded-lg bg-white relative mt-[-50px] p-[16px] flex flex-col mb-32 min-h-screen grow-1">
       <section className='flex w-full'>
         <div className='w-[30%] md:w-[20%]'>
           <Image className='w-[100%] rounded-lg' src="/logo-JR.png" alt='Logo do Mini Mercado JR' width={100} height={100}>

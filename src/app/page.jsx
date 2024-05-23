@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react"; //Hooks
 import Header from "./components/Header";
 import Apresentacao from "./components/Apresentacao";
+import Footer from "./components/Footer";
 
 
 
@@ -21,9 +22,11 @@ export default function Home() {
 
   return (
 
-    <div className="flex flex-col justify-center items-center min-h[100%]">
+    <div className="flex flex-col justify-center items-center min-h-full">
       <Header />
-      <Apresentacao />          
+      <Apresentacao /> 
+      <Footer />
+             
     </div>
   );
 }
