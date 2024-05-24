@@ -10,7 +10,7 @@ export default function ProductItem({name, image, price, description}) {
                     <p className="text-sm">{description}</p>
                     <p className="text-sm">Preço: {price}</p>
                 </div>
-                <div className="w-[40%] h-[15%] flex justify-end ">
+                <div className="w-[40% h-full flex justify-end items-center">
                     <Image src={image} alt={name} width={100} height={100}/> 
                 </div>           
             </div>

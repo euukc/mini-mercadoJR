@@ -98,7 +98,7 @@ export default function Apresentacao() {
 
 
   return (
-    <main className="md:w-[70%] sm:w-[80%] w-[85%] lg:w-[50%] rounded-lg bg-white relative mt-[-50px] p-[16px] flex flex-col mb-32 min-h-screen grow-1 shadow-2xl">
+    <main className="md:w-[100%] lg:w-[800px] rounded-lg bg-white relative mt-[-50px] p-[16px] flex flex-col mb-32 min-h-screen grow-1 shadow-2xl">
       <section className='flex w-full'>
         <div className='w-[30%] md:w-[20%]'>
           <Image className='w-[100%] rounded-lg' src="/logo-JR.png" alt='Logo do Mini Mercado JR' width={100} height={100}>

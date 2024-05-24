@@ -11,7 +11,7 @@ export default function Menu({ categories, onSelectCategory }) {
                         onClick={() => onSelectCategory(category)}
                         className="cursor-pointer w-[10px]">
                         {category}
-                    </li>
+                    </li>                    
                 ))}
             </ul>            
         </section>
