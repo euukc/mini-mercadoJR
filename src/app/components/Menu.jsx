@@ -9,7 +9,7 @@ export default function Menu({ categories, onSelectCategory }) {
                     <li id="menu-navbar" 
                         key={category}
                         onClick={() => onSelectCategory(category)}
-                        className="cursor-pointer w-[10px]">
+                        className="cursor-pointer w-[10px] shadow-md                        ">
                         {category}
                     </li>                    
                 ))}
