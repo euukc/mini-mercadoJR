@@ -15,6 +15,6 @@
  - NextJS
 
 
+## Confira o projeto:
 
-
-
+![catalogo-jr](https://github.com/euukc/catalogoJR/assets/56362484/b7790be2-d469-45ea-a064-e6458ee53a0f)
