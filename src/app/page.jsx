@@ -15,8 +15,7 @@ export default function Home() {
 
   const [relogio, setRelogio] = useState();
 
-  function clicarRelogio() {
-    document.getElementById('seila').innerHTML = 'Clicou!'
+  function clicarRelogio() {    
     setRelogio(new Date().toString())
   };
 
