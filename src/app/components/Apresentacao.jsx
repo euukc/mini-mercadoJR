@@ -8,52 +8,93 @@ import ProductList from '../components/ProductList';
 const productsData = [
   {
     "id": 1,
-    "name": "Martelo",
-    "image": "/martelo.jpg",
+    "name": "Laranja",
+    "image": "/laranja.jpg",
     "price": "R$ 20,00",
-    "description": "Martelo Unha 29cm Aço Polido",
-    "category": "Martelos"
+    "description": "",
+    "category": "Hortifrute"
   },
   {
     "id": 2,
-    "name": "Prego",
-    "image": "/pregos.jpg",
+    "name": "Maçã",
+    "image": "/maça.jpg",
     "price": "R$ 0,50 cada",
-    "description": "Prego de aço",
-    "category": "Pregos"
+    "description": "",
+    "category": "Hortifrute"
   },
   {
     "id": 3,
-    "name": "Serrote",
-    "image": "/serrote.jpg",
+    "name": "Costela congelada",
+    "image": "/carne-congelada.jpg",
     "price": "R$ 30,00",
-    "description": "Serrote Profissional 29 Polegadas",
-    "category": "Serrotes"
+    "description": "",
+    "category": "Carnes"
   },
   {
     "id": 4,
-    "name": "Alicate Universal",
-    "image": "/alicate-universal.jpg",
+    "name": "Ração para cachorro",
+    "image": "/raçao-cachorro.jpg",
     "price": "R$ 20,00",
-    "description": "Corpo forjado em aço especial e temperado, aço carbono especial empregado na fabricação do produto",
-    "category": "Alicates"
-  },
+    "description": "",
+    "category": "Rações"
+  },  
   {
-    "id": 5,
-    "name": "Alicate Corte",
-    "image": "/alicate-corte.png",
+    "id": 4,
+    "name": "Coca-cola garrafa 2L",
+    "image": "/coca-cola.jpg",
     "price": "R$ 20,00",
-    "description": "Martelo de Madeira",
-    "category": "Alicates"
-  },
+    "description": "",
+    "category": "Bebidas"
+  }, 
   {
-    "id": 6,
-    "name": "Chave Philips",
-    "image": "/chave-philips.png",
+    "id": 4,
+    "name": "Sprite garrafa 2L",
+    "image": "/sprite.jpg",
     "price": "R$ 20,00",
-    "description": "Chave Philips de 1/4 x 6 Polegadas",
-    "category": "Chaves"
-  }
+    "description": "",
+    "category": "Bebidas"
+  }, 
+  {
+    "id": 4,
+    "name": "Sabonete Palmolive",
+    "image": "/sabonete-palmolive.jpg",
+    "price": "R$ 20,00",
+    "description": "",
+    "category": "Higiente Pessoal"
+  }, 
+  {
+    "id": 4,
+    "name": "Pão Panco Integral",
+    "image": "/pao-panco-integral.jpg",
+    "price": "R$ 20,00",
+    "description": "",
+    "category": "Pãos"
+  }, 
+  {
+    "id": 4,
+    "name": "Pão Francês",
+    "image": "/pao-frances.jpg",
+    "price": "R$ 20,00",
+    "description": "",
+    "category": "Pãos"
+  }, 
+  {
+    "id": 4,
+    "name": "Ketchup",
+    "image": "/ketchup.jpg",
+    "price": "R$ 20,00",
+    "description": "",
+    "category": "Condimentos"
+  }, 
+  {
+    "id": 4,
+    "name": "Arroz Camil 5kg",
+    "image": "/arroz-5kg.jpg",
+    "price": "R$ 20,00",
+    "description": "",
+    "category": "Grãos e Cereais"
+  }, 
+
 ];
 
 
@@ -105,9 +146,8 @@ export default function Apresentacao() {
           </Image>
         </div>
 
-        <div className='w-[70%] flex justify-start pl-4 flex-col text-[13.5px] md:text-[16px] sm:text-[16px] pt-2 md:pt-6'>
-          <strong> JR Ferragem </strong>
-          <p> Mini Mercado & Ferragem </p>
+        <div className='w-[70%] flex justify-start pl-4 flex-col text-[30px] xl:text-[40px] sm:text-[16px] pt-2 md:pt-6'>
+          <strong> Mini Mercado & Fruteira JR </strong>          
         </div>
       </section>
 
