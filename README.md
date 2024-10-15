@@ -17,4 +17,5 @@
 
 ## Confira o projeto:
 
-![catalogo-jr](https://mini-mercado-jr.vercel.app/)
+![localhost_3000_ (2)](https://github.com/user-attachments/assets/5ed87773-5f6f-4feb-aecc-be1eb9df1fb3)
+
