@@ -9,25 +9,22 @@ import WhatsappBtn from "./components/WhatsappBtn";
 
 
 
-
-
 export default function Home() {
 
   const [relogio, setRelogio] = useState();
 
-  function clicarRelogio() {    
+  function clicarRelogio() {
     setRelogio(new Date().toString())
   };
 
 
   return (
 
-    <div className="flex flex-col justify-center items-center min-h-full bg-[#5ac268]">
+    <div className="flex flex-col justify-center items-center min-h-full bg-[#5ac268]">     
       <Header />
-      <Apresentacao /> 
+      <Apresentacao />
       <Footer />
       <WhatsappBtn />
-             
     </div>
   );
 }
