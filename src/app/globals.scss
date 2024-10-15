@@ -23,6 +23,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+  #menu-navbar:hover {
+    background-color: #5ac268;
 
 }
 
@@ -34,10 +37,6 @@
     padding-inline: 20px;
     white-space: nowrap;
     
-  }
-
-  #menu-navbar:hover {
-    background-color: #5ac268;
-  }
+  }  
 
 }
