@@ -29,8 +29,13 @@
 
 @media(max-width: 574px) {
   #menu-navbar {
-    min-width: 170px;
-    height: 45px;        
+    min-width: 130px;
+    height: 35px;  
+    padding: 15px;    
+  }
+
+  #menu-navbar:hover {
+    background-color: #5ac268;
   }
 
 }

@@ -3,99 +3,7 @@ import Menu from './Menu';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ProductList from '../components/ProductList';
-
-
-const productsData = [
-  {
-    "id": 1,
-    "name": "Laranja",
-    "image": "/laranja.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Hortifrute"
-  },
-  {
-    "id": 2,
-    "name": "Maçã",
-    "image": "/maça.jpg",
-    "price": "R$ 0,50 cada",
-    "description": "",
-    "category": "Hortifrute"
-  },
-  {
-    "id": 3,
-    "name": "Costela congelada",
-    "image": "/carne-congelada.jpg",
-    "price": "R$ 30,00",
-    "description": "",
-    "category": "Carnes"
-  },
-  {
-    "id": 4,
-    "name": "Ração para cachorro",
-    "image": "/raçao-cachorro.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Rações"
-  },  
-  {
-    "id": 4,
-    "name": "Coca-cola garrafa 2L",
-    "image": "/coca-cola.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Bebidas"
-  }, 
-  {
-    "id": 4,
-    "name": "Sprite garrafa 2L",
-    "image": "/sprite.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Bebidas"
-  }, 
-  {
-    "id": 4,
-    "name": "Sabonete Palmolive",
-    "image": "/sabonete-palmolive.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Higiente Pessoal"
-  }, 
-  {
-    "id": 4,
-    "name": "Pão Panco Integral",
-    "image": "/pao-panco-integral.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Pãos"
-  }, 
-  {
-    "id": 4,
-    "name": "Pão Francês",
-    "image": "/pao-frances.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Pãos"
-  }, 
-  {
-    "id": 4,
-    "name": "Ketchup",
-    "image": "/ketchup.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Condimentos"
-  }, 
-  {
-    "id": 4,
-    "name": "Arroz Camil 5kg",
-    "image": "/arroz-5kg.jpg",
-    "price": "R$ 20,00",
-    "description": "",
-    "category": "Grãos e Cereais"
-  }, 
-
-];
+import productsData from '../data/products.json';
 
 
 
@@ -112,7 +20,7 @@ export default function Apresentacao() {
     useEffect(() => {
       const intervalId = setInterval(() => {
         setStatus(getStatus());
-      }, 60000);  //faz com que o estado status seja atualizado a cada minuto para garantir que o status ('Aberto' ou 'Fechado') esteja correto, mesmo que o usuário mantenha a página aberta por um longo período.
+      }, 60000); 
 
       return () => clearInterval(intervalId);
     }, [status]);
