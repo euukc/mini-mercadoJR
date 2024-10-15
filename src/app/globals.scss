@@ -31,7 +31,9 @@
   #menu-navbar {
     min-width: 130px;
     height: 35px;  
-    padding: 15px;    
+    padding-inline: 20px;
+    white-space: nowrap;
+    
   }
 
   #menu-navbar:hover {
