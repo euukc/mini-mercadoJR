@@ -18,7 +18,8 @@ export default function Admin() {
             const response = await axios.get('https://backend-mercadojr-0bf437acad9e.herokuapp.com/api/products', {
                 headers: {
                     'Authorization': `Bearer ${token}`
-                }
+                },
+                withCredentials: true,
             });                        
 
             if (response.data.products) {

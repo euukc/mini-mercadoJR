@@ -32,6 +32,7 @@ export default function Login() {
             }
 
         } catch (error) {
+            console.error(error);
             if (!error?.response) {
                 setError('Erro ao acessar o servidor!')
             } else if (error.response.status == 401) {
