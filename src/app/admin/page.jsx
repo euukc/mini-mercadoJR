@@ -15,6 +15,7 @@ export default function Admin() {
     const fetchProductsAdmin = async () => {
         try {
             const token = localStorage.getItem('token');
+
             const response = await axios.get('https://backend-mercadojr-0bf437acad9e.herokuapp.com/api/products', {
                 headers: {
                     'Authorization': `Bearer ${token}`
