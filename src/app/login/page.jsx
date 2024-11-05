@@ -16,7 +16,7 @@ export default function Login() {
         
 
         try {
-            const response = await axios.post('http://localhost:3001/login',
+            const response = await axios.post('https://backend-mercadojr-0bf437acad9e.herokuapp.com/api/auth/login',
                 JSON.stringify({ email, password }),  
                 {
                     headers: {
