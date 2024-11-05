@@ -1,7 +1,7 @@
-import { Manrope } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.scss";
 
-const manrope = Manrope({ subsets: ["latin"]});
+const manrope = Roboto({ subsets: ["latin"], weight:['700']});
 
 export const metadata = {
   title: "Portfólio de Produtos",
