@@ -1,6 +1,7 @@
 "use cliente"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 
 export default function WhatsappBtn() {
@@ -26,19 +27,27 @@ export default function WhatsappBtn() {
     }, []);
 
     const clickBtnWpp = () => {
-        window.open(`https://api.whatsapp.com/send?phone=${55110000000}&text=${'Testando'}`, '_blank');
+        window.open(`https://api.whatsapp.com/send?phone=${53984781410}&text=${'Olá! Vim do site e tenho uma dúvida:'}`, '_blank');
     }
 
     const btnStyle = {
         boxShadow: '1px 1px 10px',
         borderRadius: '100px',
-        display: isVisible ? 'block' : 'none' // Define a visibilidade com base no estado
+        display: isVisible ? 'block' : 'none'
     };
 
 
     return (
         <div className="fixed md:w-[80px] md:h-[80px] md:bottom-[400px] md:right-[20px] w-[40px] bottom-[60px] sm:w-[60px] cursor-pointer" style={btnStyle}>
-            {isVisible && <img src="/whatsapp.png" alt="Botão do WhatsApp" onClick={clickBtnWpp} />}
+            {isVisible && (
+                <Image 
+                src="/whatsapp.png" 
+                width={100} 
+                height={60} 
+                alt="Botão do WhatsApp" 
+                onClick={clickBtnWpp} 
+            />
+            )}
         </div>
     )
 }

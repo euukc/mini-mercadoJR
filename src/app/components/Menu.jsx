@@ -30,7 +30,7 @@ export default function Menu({ onSelectCategory }) {
                     <li
                         key={index}
                         onClick={() => onSelectCategory(category)}
-                        className='text-[13.5px] md:text-[16px] cursor-pointer p-2 md:px-4 md:min-w-[300px] text-center border-2-0 shadow-inner-lg rounded-3xl'>
+                        className='btn-category text-[13.5px] md:text-[16px] cursor-pointer p-2 md:px-4 md:min-w-[300px] text-center shadow-[#f46700] border-2-0 shadow-inner-lg rounded-3xl'>
                         {category}
                     </li>
                 ))}

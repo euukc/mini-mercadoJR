@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
 
-    <div className="flex flex-col justify-center items-center min-h-full bg-[#fed808]">     
+    <div className="flex flex-col justify-center items-center min-h-full bg-[#f46700]">     
       <Header />
       <Apresentacao />
       <Footer />
