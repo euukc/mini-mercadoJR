@@ -10,9 +10,11 @@ export default function Apresentacao() {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   const fetchProducts = async () => {
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://backend-mercadojr-0bf437acad9e.herokuapp.com';
+  
     try {
-      const response = await axios.get('https://backend-mercadojr-0bf437acad9e.herokuapp.com/api/products');
-
+      const response = await axios.get(`${apiUrl}/api/products`);
+  
       if (response.data.products) {
         setProducts(response.data.products);
       } else {
@@ -28,6 +30,7 @@ export default function Apresentacao() {
   }, []);
 
   useEffect(() => {
+
     setFilteredProducts(selectedCategory
       ? products.filter(product => product.category === selectedCategory)
       : products
@@ -37,6 +40,8 @@ export default function Apresentacao() {
   const handleSelectCategory = (category) => {
     setSelectedCategory(category);
   };
+
+
 
   const getStatus = () => {
     const horaAtual = new Date().getHours();
@@ -52,6 +57,7 @@ export default function Apresentacao() {
       }, 60000);
       return () => clearInterval(intervalId);
     }, [status]);
+    
 
     const statusStyle = {
       color: status === 'Aberto' ? 'green' : 'red',
@@ -61,7 +67,7 @@ export default function Apresentacao() {
   };
 
   return (
-    <main className="md:w-[100%] sm:w-[100%] w-[98%] lg:w-[1000px] rounded-lg bg-white relative mt-[-50px] p-[16px] flex flex-col mb-32 min-h-screen grow-1 shadow-2xl">
+    <main className="md:w-[100%] sm:w-[100%] w-[95%] lg:w-[1000px] rounded-lg bg-white relative mt-[-50px] p-[16px] flex flex-col mb-32 min-h-screen grow-1 shadow-2xl">
       <section className="flex w-full">
         <div className="w-[30%] md:w-[20%]">
           <Image className="w-[100%] rounded-lg" src="/logo-JR.png" alt="Logo do Mini Mercado JR" width={100} height={100} />

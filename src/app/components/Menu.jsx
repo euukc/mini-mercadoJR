@@ -6,7 +6,7 @@ export default function Menu({ onSelectCategory }) {
 
     const fetchCategories = async () => {
         try {
-            const response = await axios.get('https://backend-mercadojr-0bf437acad9e.herokuapp.com/api/categories');
+            const response = await axios.get('https://backend-mercadojr-0bf437acad9e.herokuapp.com/api/categories');            
 
             if (Array.isArray(response.data.categories)) {
                 setFetchedCategories(response.data.categories);

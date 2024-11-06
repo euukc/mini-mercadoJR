@@ -4,8 +4,8 @@ import ProductItem from "./ProductItem";
 export default function ProductList({ products }) {
 
   useEffect(() => {
-    console.log(products)
-  });
+    console.log('Produtos no ProductList:', products);
+  }, [products]);
 
   return (
 
