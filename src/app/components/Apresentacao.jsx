@@ -29,8 +29,8 @@ export default function Apresentacao() {
     fetchProducts();
   }, []);
 
-  useEffect(() => {
 
+  useEffect(() => {
     setFilteredProducts(selectedCategory
       ? products.filter(product => product.category === selectedCategory)
       : products
@@ -44,8 +44,20 @@ export default function Apresentacao() {
 
 
   const getStatus = () => {
-    const horaAtual = new Date().getHours();
-    return horaAtual >= 8 && horaAtual <= 22 ? 'Aberto' : 'Fechado';
+    const agora = new Date();
+    const horaAtual = agora.getHours();
+    const minutosAtuais = agora.getMinutes();
+  
+    
+    if (horaAtual > 8 && horaAtual < 20) {
+        return 'Aberto';
+    } else if (horaAtual === 8 && minutosAtuais >= 0) {
+        return 'Aberto';
+    } else if (horaAtual === 20 && minutosAtuais <= 30) {
+        return 'Aberto';
+    } else {
+        return 'Fechado';
+    }
   };
 
   const OperatingStatus = () => {

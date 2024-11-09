@@ -7,11 +7,13 @@ export default function ProductList({ products }) {
     console.log('Produtos no ProductList:', products);
   }, [products]);
 
+ 
   return (
 
     <div className="flex flex-wrap justify-around mt-[-100px]">
       {products.map((product) => (
-        <ProductItem key={product.id} product={product} />
+        <ProductItem
+          key={product.id} product={product} />
       ))}
     </div>
   );

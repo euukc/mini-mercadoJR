@@ -12,11 +12,6 @@ export default function WhatsappBtn() {
             if (window.scrollY > 100) {
                 setIsVisible(true);
             }
-
-            const btnStyle = {
-                boxShadow: '1px 1px 20px',
-                borderRadius: '100px'
-            };
         };
 
         window.addEventListener('scroll', scroll);
@@ -40,13 +35,13 @@ export default function WhatsappBtn() {
     return (
         <div className="fixed md:w-[80px] md:h-[80px] md:bottom-[400px] md:right-[20px] w-[40px] bottom-[60px] sm:w-[60px] cursor-pointer" style={btnStyle}>
             {isVisible && (
-                <Image 
-                src="/whatsapp.png" 
-                width={100} 
-                height={60} 
-                alt="Botão do WhatsApp" 
-                onClick={clickBtnWpp} 
-            />
+                <Image
+                    src="/whatsapp.png"
+                    width={100}
+                    height={60}
+                    alt="Botão do WhatsApp"
+                    onClick={clickBtnWpp}
+                />
             )}
         </div>
     )
